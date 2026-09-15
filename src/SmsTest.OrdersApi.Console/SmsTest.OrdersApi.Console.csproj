@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Configurations>Debug;Release;RestApp;GrpcApp</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SmsTest.OrdersApi.Contracts\SmsTest.OrdersApi.Contracts.csproj"/>
+        <ProjectReference Include="..\SmsTest.OrdersApi.Grpc.Client\SmsTest.OrdersApi.Grpc.Client.csproj" Condition="'$(Configuration)' == 'GrpcApp'"/>
+        <ProjectReference Include="..\SmsTest.OrdersApi.Rest.Client\SmsTest.OrdersApi.Rest.Client.csproj" Condition="'$(Configuration)' != 'GrpcApp'"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.20">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.12"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
+        <PackageReference Include="PgBulk.EFCore" Version="2.0.3"/>
+        <PackageReference Include="Serilog" Version="4.4.0"/>
+        <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0"/>
+        <PackageReference Include="Serilog.Settings.Configuration" Version="10.0.1"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="7.0.0"/>
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'GrpcApp'">
+        <DefineConstants>$(DefineConstants);USE_GRPC_CLIENT</DefineConstants>
+    </PropertyGroup>
+</Project>

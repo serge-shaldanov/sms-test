@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.OrdersApi.Console", "SmsTest.OrdersApi.Console\SmsTest.OrdersApi.Console.csproj", "{F575887E-465E-28F3-9F0B-A11941929F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.OrdersApi.Contracts", "SmsTest.OrdersApi.Contracts\SmsTest.OrdersApi.Contracts.csproj", "{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.OrdersApi.Grpc.Client", "SmsTest.OrdersApi.Grpc.Client\SmsTest.OrdersApi.Grpc.Client.csproj", "{8C9B235D-A7B2-230A-700C-17D0939B87CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.OrdersApi.Grpc.Contracts", "SmsTest.OrdersApi.Grpc.Contracts\SmsTest.OrdersApi.Grpc.Contracts.csproj", "{9841FF30-18E6-A203-261E-6F672BA3FB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.OrdersApi.Rest.Client", "SmsTest.OrdersApi.Rest.Client\SmsTest.OrdersApi.Rest.Client.csproj", "{323682F1-EDB3-5B38-56FD-6A26705F9EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.Mocks.OrdersApi.Grpc", "SmsTest.Mocks.OrdersApi.Grpc\SmsTest.Mocks.OrdersApi.Grpc.csproj", "{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.Mocks.OrdersApi.Rest", "SmsTest.Mocks.OrdersApi.Rest\SmsTest.Mocks.OrdersApi.Rest.csproj", "{34641D62-55A3-8187-C7AA-3F567C98ED5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocks", "Mocks", "{538F2A43-6114-6D32-FD9B-C27BFA77DD39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4F52FD11-658E-A102-6CD3-7D7C16FFA15B}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GrpcApp|Any CPU = GrpcApp|Any CPU
+		Release|Any CPU = Release|Any CPU
+		RestApp|Any CPU = RestApp|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F575887E-465E-28F3-9F0B-A11941929F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.GrpcApp|Any CPU.Build.0 = GrpcApp|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{F575887E-465E-28F3-9F0B-A11941929F42}.RestApp|Any CPU.Build.0 = RestApp|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.GrpcApp|Any CPU.Build.0 = GrpcApp|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{0CAC5790-EAFC-DEDC-4AFD-B12B4E334E2A}.RestApp|Any CPU.Build.0 = RestApp|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.GrpcApp|Any CPU.Build.0 = GrpcApp|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9B235D-A7B2-230A-700C-17D0939B87CF}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.GrpcApp|Any CPU.Build.0 = GrpcApp|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9841FF30-18E6-A203-261E-6F672BA3FB79}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{323682F1-EDB3-5B38-56FD-6A26705F9EEA}.RestApp|Any CPU.Build.0 = RestApp|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.GrpcApp|Any CPU.Build.0 = GrpcApp|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.GrpcApp|Any CPU.ActiveCfg = GrpcApp|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.RestApp|Any CPU.Build.0 = RestApp|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94} = {538F2A43-6114-6D32-FD9B-C27BFA77DD39}
+		{34641D62-55A3-8187-C7AA-3F567C98ED5B} = {538F2A43-6114-6D32-FD9B-C27BFA77DD39}
+	EndGlobalSection
+EndGlobal
