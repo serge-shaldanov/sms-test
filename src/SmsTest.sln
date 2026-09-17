@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4F52FD
 		global.json = global.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTest.VariablesApp", "SmsTest.VariablesApp\SmsTest.VariablesApp.csproj", "{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,14 @@ Global
 		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.RestApp|Any CPU.ActiveCfg = RestApp|Any CPU
 		{34641D62-55A3-8187-C7AA-3F567C98ED5B}.RestApp|Any CPU.Build.0 = RestApp|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.GrpcApp|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.GrpcApp|Any CPU.Build.0 = Debug|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.RestApp|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB628D7-A2B9-4DEC-B33E-2593E1AF884A}.RestApp|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DCF29A1E-A3BD-1CF3-F4D0-96BBE7937A94} = {538F2A43-6114-6D32-FD9B-C27BFA77DD39}
